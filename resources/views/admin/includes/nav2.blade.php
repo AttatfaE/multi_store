@@ -3,7 +3,7 @@
     <div class="slimscroll chat">
         <div class="chat-item chat-item-left">
             <div class="chat-image">
-                <img src="assets/admin/images/avatar2.png" alt="">
+                <img src="{{asset('assets/admin/images/avatar2.png')}}" alt="">
             </div>
             <div class="chat-message">
                 Hi There!
@@ -16,7 +16,7 @@
         </div>
         <div class="chat-item chat-item-left">
             <div class="chat-image">
-                <img src="assets/images/avatar2.png" alt="">
+                <img src="{{asset('assets/admin/images/avatar2.png')}}" alt="">
             </div>
             <div class="chat-message">
                 Fine! do you like my project?
@@ -29,7 +29,7 @@
         </div>
         <div class="chat-item chat-item-left">
             <div class="chat-image">
-                <img src="assets/images/avatar2.png" alt="">
+                <img src="{{asset('assets/admin/images/avatar2.png')}}" alt="">
             </div>
             <div class="chat-message">
                 Thanks, I tried!

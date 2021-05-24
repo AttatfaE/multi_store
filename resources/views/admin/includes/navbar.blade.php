@@ -5,8 +5,8 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-        <div class="logo-box">
-            <a href="index.html" class="logo-text"><span>Modern</span></a>
+        <div class="logo-box" style="width: 18%;  ">
+            <a href="index.html" class="logo-text" ><span>Modern</span></a>
         </div><!-- Logo Box -->
         <div class="search-button">
             <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
@@ -113,7 +113,7 @@
                                 <ul class="list-unstyled">
                                     <li>
                                         <a href="#">
-                                            <div class="msg-img"><div class="online on"></div><img class="img-circle" src="assets/images/avatar2.png" alt=""></div>
+                                            <div class="msg-img"><div class="online on"></div><img class="img-circle" src="{{asset('assets/admin/images/avatar2.png')}}" alt=""></div>
                                             <p class="msg-name">Sandra Smith</p>
                                             <p class="msg-text">Hey ! I'm working on your project</p>
                                             <p class="msg-time">3 minutes ago</p>
@@ -121,7 +121,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="msg-img"><div class="online off"></div><img class="img-circle" src="assets/images/avatar4.png" alt=""></div>
+                                            <div class="msg-img"><div class="online off"></div><img class="img-circle"src="{{asset('assets/admin/images/avatar4.png')}}" alt=""></div>
                                             <p class="msg-name">Amily Lee</p>
                                             <p class="msg-text">Hi David !</p>
                                             <p class="msg-time">8 minutes ago</p>
@@ -129,7 +129,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="msg-img"><div class="online off"></div><img class="img-circle" src="assets/images/avatar3.png" alt=""></div>
+                                            <div class="msg-img"><div class="online off"></div><img class="img-circle" src="{{asset('assets/admin/images/avatar3.png')}}" alt=""></div>
                                             <p class="msg-name">Christopher Palmer</p>
                                             <p class="msg-text">See you soon !</p>
                                             <p class="msg-time">56 minutes ago</p>
@@ -137,7 +137,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="msg-img"><div class="online on"></div><img class="img-circle" src="assets/images/avatar5.png" alt=""></div>
+                                            <div class="msg-img"><div class="online on"></div><img class="img-circle" src="{{asset('assets/admin/images/avatar5.png')}}" alt=""></div>
                                             <p class="msg-name">Nick Doe</p>
                                             <p class="msg-text">Nice to meet you</p>
                                             <p class="msg-time">2 hours ago</p>
@@ -145,7 +145,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="msg-img"><div class="online on"></div><img class="img-circle" src="assets/images/avatar2.png" alt=""></div>
+                                            <div class="msg-img"><div class="online on"></div><img class="img-circle" src="{{asset('assets/admin/images/avatar2.png')}}" alt=""></div>
                                             <p class="msg-name">Sandra Smith</p>
                                             <p class="msg-text">Hey ! I'm working on your project</p>
                                             <p class="msg-time">5 hours ago</p>
@@ -153,7 +153,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="msg-img"><div class="online off"></div><img class="img-circle" src="assets/images/avatar4.png" alt=""></div>
+                                            <div class="msg-img"><div class="online off"></div><img class="img-circle" src="{{asset('assets/admin/images/avatar4.png')}}"alt=""></div>
                                             <p class="msg-name">Amily Lee</p>
                                             <p class="msg-text">Hi David !</p>
                                             <p class="msg-time">9 hours ago</p>
@@ -199,7 +199,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown">
                             <span class="user-name">David<i class="fa fa-angle-down"></i></span>
-                            <img class="img-circle avatar" src="assets/images/avatar1.png" width="40" height="40" alt="">
+                            <img class="img-circle avatar" src="{{asset('assets/admin/images/avatar1.png')}}" width="40" height="40" alt="">
                         </a>
                         <ul class="dropdown-menu dropdown-list" role="menu">
                             <li role="presentation"><a href="profile.html"><i class="fa fa-user"></i>Profile</a></li>

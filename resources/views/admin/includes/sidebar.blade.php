@@ -42,6 +42,25 @@
                     <li><a href="ui-tree-view.html">Tree View</a></li>
                 </ul>
             </li>
+            <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-cog"></span><p>Settings</p><span class="arrow"></span></a>
+                <ul class="sub-menu">
+                    <li class="droplink"><a href="#"><p>Shipping</p><span class="arrow"></span></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Free Shipping</a></li>
+                            <li class="droplink"><a href="#"><p>Local Shipping</p><span class="arrow"></span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Inter Provincial Shipping</a></li>
+                                    <li><a href="#">Quebec Shipping</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">External Shipping</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Subscription</a></li>
+                    <li><a href="#">Cancellation</a></li>
+                </ul>
+            </li>
             <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-th"></span><p>Layouts</p><span class="arrow"></span></a>
                 <ul class="sub-menu">
                     <li><a href="layout-blank.html">Blank Page</a></li>
@@ -99,38 +118,14 @@
                     <li><a href="maps-vector.html">Vector Maps</a></li>
                 </ul>
             </li>
-            <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-gift"></span><p>Extra</p><span class="arrow"></span></a>
+            <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-cog"></span><p>Setting</p><span class="arrow"></span></a>
                 <ul class="sub-menu">
-                    <li><a href="404.html">404 Page</a></li>
-                    <li><a href="500.html">500 Page</a></li>
-                    <li><a href="invoice.html">Invoice</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="todo.html">Todo</a></li>
-                    <li><a href="pricing-tables.html">Pricing Tables</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="timeline.html">Timeline</a></li>
                     <li><a href="search.html">Search Results</a></li>
                     <li><a href="coming-soon.html">Coming Soon</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </li>
-            <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-flash"></span><p>Levels</p><span class="arrow"></span></a>
-                <ul class="sub-menu">
-                    <li class="droplink"><a href="#"><p>Level 1.1</p><span class="arrow"></span></a>
-                        <ul class="sub-menu">
-                            <li class="droplink"><a href="#"><p>Level 2.1</p><span class="arrow"></span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Level 3.1</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Level 2.2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Level 1.2</a></li>
-                </ul>
-            </li>
+
         </ul>
     </div><!-- Page Sidebar Inner -->
 </div><!-- Page Sidebar -->

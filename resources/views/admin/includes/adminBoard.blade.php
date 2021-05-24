@@ -1,6 +1,6 @@
 <div class="menu-wrap">
     <nav class="profile-menu">
-        <div class="profile"><img src="assets/images/profile-menu-image.png" width="60" alt="David Green"/><span>David Green</span></div>
+        <div class="profile"><img src="{{asset('assets/admin/images/profile-menu-image.png')}}" width="60" alt="David Green"/><span>David Green</span></div>
         <div class="profile-menu-list">
             <a href="#"><i class="fa fa-star"></i><span>Favorites</span></a>
             <a href="#"><i class="fa fa-bell"></i><span>Alerts</span></a>

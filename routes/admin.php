@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\Dashboard\SettingController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\HomeController;
@@ -16,16 +17,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['namespace'=>'admin', 'middleware'=>'auth:admin'], function (){
-    Route::get('/',[HomeController::class,'index'])->name('admin.dashboard');
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ], function(){
+    Route::get('/',[\App\Http\Controllers\Controller::class,'index']);
+    Route::group(['prefix'=>'admin','namespace'=>'admin', 'middleware'=>'auth:admin'], function (){
+        Route::get('/',[HomeController::class,'index'])->name('admin.dashboard');
+        Route::group(['prefix'=>'admin/setting'],function (){
+            Route::get('getShipping/{type}',[SettingController::class,'editShipping'])->name('admin.setting.shipping.editShipping');
+        });
 
+    });
+
+    Route::group(['prefix'=>'admin','namespace'=>'admin','middleware'=>'guest:admin'], function (){
+
+        Route::get('login',[LoginController::class,'getLogin'])->name('admin.login');
+        Route::post('login',[LoginController::class,'postLogin'])->name('post.login');
+    });
 });
 
-Route::group(['namespace'=>'admin','middleware'=>'guest:admin'], function (){
 
-    Route::get('login',[LoginController::class,'getLogin'])->name('admin.login');
-    Route::post('login',[LoginController::class,'postLogin'])->name('post.login');
-});
+
 
 
 

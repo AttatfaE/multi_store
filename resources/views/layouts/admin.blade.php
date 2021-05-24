@@ -27,7 +27,7 @@
     <link href="{{asset('assets/admin/plugins/metrojs/MetroJs.min.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('assets/admin/plugins/toastr/toastr.min.css')}}" rel="stylesheet" type="text/css"/>
 
-    @notify_css
+
     @yield('style')
 
 
@@ -36,8 +36,8 @@
     <link href="{{asset('assets/admin/css/themes/green.css')}}" class="theme-color" rel="stylesheet" type="text/css"/>
     <link href="{{asset('assets/admin/css/custom.css')}}" rel="stylesheet" type="text/css"/>
 
-    <script src="assets/plugins/3d-bold-navigation/js/modernizr.js"></script>
-    <script src="assets/plugins/offcanvasmenueffects/js/snap.svg-min.js"></script>
+    <script src="{{asset('assets/admin/plugins/3d-bold-navigation/js/modernizr.js')}}"></script>
+    <script src="{{asset('assets/admin/plugins/offcanvasmenueffects/js/snap.svg-min.js')}}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -70,8 +70,8 @@
 @include('admin.includes.nav2')
 
 {{--sidebar--}}
-<main class="page-content content-wrap">
-    @include('admin.includes.sidebar')
+<main class="page-content content-wrap ">
+    @include('admin.includes.sidebar2')
 
 {{--    Boadr--}}
     @yield('board')
@@ -85,30 +85,30 @@
 
 
 <!-- Javascripts -->
-<script src="assets/admin/plugins/jquery/jquery-2.1.4.min.js"></script>
-<script src="assets/admin/plugins/jquery-ui/jquery-ui.min.js"></script>
-<script src="assets/admin/plugins/pace-master/pace.min.js"></script>
-<script src="assets/admin/plugins/jquery-blockui/jquery.blockui.js"></script>
-<script src="assets/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/admin/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<script src="assets/admin/plugins/switchery/switchery.min.js"></script>
-<script src="assets/admin/plugins/uniform/jquery.uniform.min.js"></script>
-<script src="assets/admin/plugins/offcanvasmenueffects/js/classie.js"></script>
-<script src="assets/admin/plugins/offcanvasmenueffects/js/main.js"></script>
-<script src="assets/admin/plugins/waves/waves.min.js"></script>
-<script src="assets/admin/plugins/3d-bold-navigation/js/main.js"></script>
-<script src="assets/admin/plugins/waypoints/jquery.waypoints.min.js"></script>
-<script src="assets/admin/plugins/jquery-counterup/jquery.counterup.min.js"></script>
-<script src="assets/admin/plugins/toastr/toastr.min.js"></script>
-<script src="assets/admin/plugins/flot/jquery.flot.min.js"></script>
-<script src="assets/admin/plugins/flot/jquery.flot.time.min.js"></script>
-<script src="assets/admin/plugins/flot/jquery.flot.symbol.min.js"></script>
-<script src="assets/admin/plugins/flot/jquery.flot.resize.min.js"></script>
-<script src="assets/admin/plugins/flot/jquery.flot.tooltip.min.js"></script>
-<script src="assets/admin/plugins/curvedlines/curvedLines.js"></script>
-<script src="assets/admin/plugins/metrojs/MetroJs.min.js"></script>
-<script src="assets/admin/js/modern.js"></script>
-<script src="assets/admin/js/pages/dashboard.js"></script>
+<script src="{{asset('assets/admin/plugins/jquery/jquery-2.1.4.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/pace-master/pace.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/jquery-blockui/jquery.blockui.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/switchery/switchery.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/uniform/jquery.uniform.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/offcanvasmenueffects/js/classie.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/offcanvasmenueffects/js/main.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/waves/waves.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/3d-bold-navigation/js/main.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/waypoints/jquery.waypoints.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/jquery-counterup/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/toastr/toastr.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/flot/jquery.flot.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/flot/jquery.flot.time.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/flot/jquery.flot.symbol.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/flot/jquery.flot.resize.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/flot/jquery.flot.tooltip.min.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/curvedlines/curvedLines.js')}}"></script>
+<script src="{{asset('assets/admin/plugins/metrojs/MetroJs.min.js')}}"></script>
+<script src="{{asset('assets/admin/js/modern.js')}}"></script>
+<script src="{{asset('assets/admin/js/pages/dashboard.js')}}"></script>
 
 </body>
 </html>
