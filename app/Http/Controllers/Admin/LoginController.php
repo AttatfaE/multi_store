@@ -31,4 +31,17 @@ class LoginController extends Controller
 
 
     }
+
+    public function logout()
+    {
+       $admin = $this->authGuard();
+       $admin->logout();
+       return redirect()->route('admin.login');
+
+    }
+
+    private function authGuard()
+    {
+        return auth('admin');
+    }
 }
