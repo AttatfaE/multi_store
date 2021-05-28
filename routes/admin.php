@@ -26,7 +26,8 @@ Route::group(
     Route::group(['prefix'=>'admin','namespace'=>'admin', 'middleware'=>'auth:admin'], function (){
         Route::get('/',[HomeController::class,'index'])->name('admin.dashboard');
         Route::group(['prefix'=>'admin/setting'],function (){
-            Route::get('getShipping/{type}',[SettingController::class,'editShipping'])->name('admin.setting.shipping.editShipping');
+            Route::get('getShipping/{type}',[SettingController::class,'editShipping'])->name('admin.setting.shipping.edit');
+            Route::put('getShipping/{id}',[SettingController::class,'storeShipping'])->name('admin.setting.shipping.store');
         });
 
     });

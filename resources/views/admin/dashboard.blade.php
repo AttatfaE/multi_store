@@ -5,303 +5,319 @@
 
 @section('board')
 
-<div class="page-inner">
-    <div class="page-title">
-        <h3>Dashboard</h3>
-        <div class="page-breadcrumb">
-            <ol class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li class="active">Dashboard</li>
-            </ol>
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <div id="crypto-stats-3" class="row">
+                    <div class="col-xl-4 col-12">
+                        <div class="card crypto-card-3 pull-up">
+                            <div class="card-content">
+                                <div class="card-body pb-0">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <h1><i class="cc BTC warning font-large-2" title="BTC"></i></h1>
+                                        </div>
+                                        <div class="col-5 pl-2">
+                                            <h4>BTC</h4>
+                                            <h6 class="text-muted">Bitcoin</h6>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <h4>$9,980</h4>
+                                            <h6 class="success darken-4">31% <i class="la la-arrow-up"></i></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <canvas id="btc-chartjs" class="height-75"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12">
+                        <div class="card crypto-card-3 pull-up">
+                            <div class="card-content">
+                                <div class="card-body pb-0">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <h1><i class="cc ETH blue-grey lighten-1 font-large-2" title="ETH"></i></h1>
+                                        </div>
+                                        <div class="col-5 pl-2">
+                                            <h4>ETH</h4>
+                                            <h6 class="text-muted">Ethereum</h6>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <h4>$944</h4>
+                                            <h6 class="success darken-4">12% <i class="la la-arrow-up"></i></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <canvas id="eth-chartjs" class="height-75"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12">
+                        <div class="card crypto-card-3 pull-up">
+                            <div class="card-content">
+                                <div class="card-body pb-0">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <h1><i class="cc XRP info font-large-2" title="XRP"></i></h1>
+                                        </div>
+                                        <div class="col-5 pl-2">
+                                            <h4>XRP</h4>
+                                            <h6 class="text-muted">Balance</h6>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <h4>$1.2</h4>
+                                            <h6 class="danger">20% <i class="la la-arrow-down"></i></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <canvas id="xrp-chartjs" class="height-75"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Candlestick Multi Level Control Chart -->
+
+                <!-- Sell Orders & Buy Order -->
+                <div class="row match-height">
+                    <div class="col-12 col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Sell Order</h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <p class="text-muted">Total BTC available: 6542.56585</p>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="table-responsive">
+                                    <table class="table table-de mb-0">
+                                        <thead>
+                                        <tr>
+                                            <th>Price per BTC</th>
+                                            <th>BTC Ammount</th>
+                                            <th>Total($)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="bg-success bg-lighten-5">
+                                            <td>10583.4</td>
+                                            <td><i class="cc BTC-alt"></i> 0.45000000</td>
+                                            <td>$ 4762.53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10583.5</td>
+                                            <td><i class="cc BTC-alt"></i> 0.04000000</td>
+                                            <td>$ 423.34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10583.7</td>
+                                            <td><i class="cc BTC-alt"></i> 0.25100000</td>
+                                            <td>$ 2656.51</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10583.8</td>
+                                            <td><i class="cc BTC-alt"></i> 0.35000000</td>
+                                            <td>$ 3704.33</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10595.7</td>
+                                            <td><i class="cc BTC-alt"></i> 0.30000000</td>
+                                            <td>$ 3178.71</td>
+                                        </tr>
+                                        <tr class="bg-danger bg-lighten-5">
+                                            <td>10599.5</td>
+                                            <td><i class="cc BTC-alt"></i> 0.02000000</td>
+                                            <td>$ 211.99</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Buy Order</h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <p class="text-muted">Total USD available: 9065930.43</p>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="table-responsive">
+                                    <table class="table table-de mb-0">
+                                        <thead>
+                                        <tr>
+                                            <th>Price per BTC</th>
+                                            <th>BTC Ammount</th>
+                                            <th>Total($)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="bg-danger bg-lighten-5">
+                                            <td>10599.5</td>
+                                            <td><i class="cc BTC-alt"></i> 0.02000000</td>
+                                            <td>$ 211.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10583.5</td>
+                                            <td><i class="cc BTC-alt"></i> 0.04000000</td>
+                                            <td>$ 423.34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10583.8</td>
+                                            <td><i class="cc BTC-alt"></i> 0.35000000</td>
+                                            <td>$ 3704.33</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10595.7</td>
+                                            <td><i class="cc BTC-alt"></i> 0.30000000</td>
+                                            <td>$ 3178.71</td>
+                                        </tr>
+                                        <tr class="bg-danger bg-lighten-5">
+                                            <td>10583.7</td>
+                                            <td><i class="cc BTC-alt"></i> 0.25100000</td>
+                                            <td>$ 2656.51</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10595.8</td>
+                                            <td><i class="cc BTC-alt"></i> 0.29697926</td>
+                                            <td>$ 3146.74</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Sell Orders & Buy Order -->
+                <!-- Active Orders -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Active Order</h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <td>
+                                        <button class="btn btn-sm round btn-danger btn-glow"><i class="la la-close font-medium-1"></i> Cancel all</button>
+                                    </td>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="table-responsive">
+                                    <table class="table table-de mb-0">
+                                        <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Type</th>
+                                            <th>Amount BTC</th>
+                                            <th>BTC Remaining</th>
+                                            <th>Price</th>
+                                            <th>USD</th>
+                                            <th>Fee (%)</th>
+                                            <th>Cancel</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>2018-01-31 06:51:51</td>
+                                            <td class="success">Buy</td>
+                                            <td><i class="cc BTC-alt"></i> 0.58647</td>
+                                            <td><i class="cc BTC-alt"></i> 0.58647</td>
+                                            <td>11900.12</td>
+                                            <td>$ 6979.78</td>
+                                            <td>0.2</td>
+                                            <td>
+                                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-01-31 06:50:50</td>
+                                            <td class="danger">Sell</td>
+                                            <td><i class="cc BTC-alt"></i> 1.38647</td>
+                                            <td><i class="cc BTC-alt"></i> 0.38647</td>
+                                            <td>11905.09</td>
+                                            <td>$ 4600.97</td>
+                                            <td>0.2</td>
+                                            <td>
+                                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-01-31 06:49:51</td>
+                                            <td class="success">Buy</td>
+                                            <td><i class="cc BTC-alt"></i> 0.45879</td>
+                                            <td><i class="cc BTC-alt"></i> 0.45879</td>
+                                            <td>11901.85</td>
+                                            <td>$ 5460.44</td>
+                                            <td>0.2</td>
+                                            <td>
+                                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-01-31 06:51:51</td>
+                                            <td class="success">Buy</td>
+                                            <td><i class="cc BTC-alt"></i> 0.89877</td>
+                                            <td><i class="cc BTC-alt"></i> 0.89877</td>
+                                            <td>11899.25</td>
+                                            <td>$ 10694.6</td>
+                                            <td>0.2</td>
+                                            <td>
+                                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-01-31 06:51:51</td>
+                                            <td class="danger">Sell</td>
+                                            <td><i class="cc BTC-alt"></i> 0.45712</td>
+                                            <td><i class="cc BTC-alt"></i> 0.45712</td>
+                                            <td>11908.58</td>
+                                            <td>$ 5443.65</td>
+                                            <td>0.2</td>
+                                            <td>
+                                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-01-31 06:51:51</td>
+                                            <td class="success">Buy</td>
+                                            <td><i class="cc BTC-alt"></i> 0.58647</td>
+                                            <td><i class="cc BTC-alt"></i> 0.58647</td>
+                                            <td>11900.12</td>
+                                            <td>$ 6979.78</td>
+                                            <td>0.2</td>
+                                            <td>
+                                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Active Orders -->
+            </div>
         </div>
     </div>
-    <div id="main-wrapper">
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="panel info-box panel-white">
-                    <div class="panel-body">
-                        <div class="info-box-stats">
-                            <p class="counter">107,200</p>
-                            <span class="info-box-title">Total Sells</span>
-                        </div>
-                        <div class="info-box-icon">
-                            <i class="fa fa-money"></i>
-                        </div>
-                        <div class="info-box-progress">
-                            <div class="progress progress-xs progress-squared bs-n">
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="panel info-box panel-white">
-                    <div class="panel-body">
-                        <div class="info-box-stats">
-                            <p class="counter">340,230</p>
-                            <span class="info-box-title">Total Orders</span>
-                        </div>
-                        <div class="info-box-icon">
-                            <i class="fa fa-shopping-cart"></i>
-                        </div>
-                        <div class="info-box-progress">
-                            <div class="progress progress-xs progress-squared bs-n">
-                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="panel info-box panel-white">
-                    <div class="panel-body">
-                        <div class="info-box-stats">
-                            <p>$<span class="counter">653,000</span></p>
-                            <span class="info-box-title">Products Number</span>
-                        </div>
-                        <div class="info-box-icon">
-                            <i class=" icon-handbag"></i>
-                        </div>
-                        <div class="info-box-progress">
-                            <div class="progress progress-xs progress-squared bs-n">
-                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="panel info-box panel-white">
-                    <div class="panel-body">
-                        <div class="info-box-stats">
-                            <p class="counter">47,500</p>
-                            <span class="info-box-title">Vendors Number</span>
-                        </div>
-                        <div class="info-box-icon">
-                            <i class="icon-users"></i>
-                        </div>
-                        <div class="info-box-progress">
-                            <div class="progress progress-xs progress-squared bs-n">
-                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- Row -->
-        <div class="row">
-            <div class=" col-lg-5">
-                <div class="panel panel-white">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">Latest Evaluations</h4>
-
-                        <div class="panel-control">
-                            <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Reload" class="panel-reload"><i class="icon-reload"></i></a>
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Vendor</th>
-                                <th>Product</th>
-                                <th>Evaluation</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Cotsco</td>
-                                <td>Smart TV Sumsung 65"</td>
-                                <td>
-                                    5/5
-                                    <div class="progress progress-sm">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                                        </div>
-                                    </div>
-                                </td>
-
-
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Winners</td>
-                                <td>Armani Si Parfume 50 ml</td>
-                                <td>
-                                    1/5
-                                    <div class="progress progress-sm">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-7">
-                <div class="panel panel-white">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">Latest Orders</h4>
-
-                        <div class="panel-control">
-                            <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Reload" class="panel-reload"><i class="icon-reload"></i></a>
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        <table class="table  table-bordered  table-striped">
-                            <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Order Number</th>
-                                <th>Vendor</th>
-                                <th>Price</th>
-                                <th>Status</th>
-                                <th>Total Price</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>000001</td>
-                                <td>Cotsco</td>
-                                <td>250.99 $</td>
-                                <td><span class="label label-primary">In Progress</span></td>
-                                <td>250.99 $</td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>000002</td>
-                                <td>Winners</td>
-                                <td>134.49 $</td>
-                                <td><span class="label label-success">Finished</span></td>
-                                <td>134.49 $</td>
-
-                            </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-12 col-md-12">
-                <div class="panel panel-white">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">Project Stats</h4>
-                    </div>
-                    <div class="panel-body">
-                        <div class="table-responsive project-stats">
-                            <table class="table">
-                                <thead >
-                                <tr>
-                                    <th>#</th>
-                                    <th>Project</th>
-                                    <th>Status</th>
-                                    <th>Manager</th>
-                                    <th>Progress</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">452</th>
-                                    <td>Mailbox Template</td>
-                                    <td><span class="label label-info">Pending</span></td>
-                                    <td>David Green</td>
-                                    <td>
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                Action <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Action</a></li>
-                                                <li><a href="#">Another action</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a></li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">327</th>
-                                    <td>Wordpress Theme</td>
-                                    <td><span class="label label-primary">In Progress</span></td>
-                                    <td>Sandra Smith</td>
-                                    <td>
-                                        <div class="progress progress-sm">
-                                            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">226</th>
-                                    <td>Modern Admin Template</td>
-                                    <td><span class="label label-success">Finished</span></td>
-                                    <td>Chritopher Palmer</td>
-                                    <td>
-                                        <div class="progress progress-sm">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">178</th>
-                                    <td>eCommerce template</td>
-                                    <td><span class="label label-danger">Canceled</span></td>
-                                    <td>Amily Lee</td>
-                                    <td>
-                                        <div class="progress progress-sm">
-                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">157</th>
-                                    <td>Website PSD</td>
-                                    <td><span class="label label-info">Testing</span></td>
-                                    <td>Nick Doe</td>
-                                    <td>
-                                        <div class="progress progress-sm">
-                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">157</th>
-                                    <td>Fronted Theme</td>
-                                    <td><span class="label label-warning">Waiting</span></td>
-                                    <td>David Green</td>
-                                    <td>
-                                        <div class="progress progress-sm">
-                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!-- Main Wrapper -->
-
-</div><!-- Page Inner -->
 @stop

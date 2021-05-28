@@ -32,9 +32,9 @@ class loginAdminRequest extends FormRequest
     public function messages()
     {
         return [
-            'email.required'=> 'email required',
-            'email.email'=> 'must be email format',
-            'password.required' => 'password required'
+            'email.required'=>'Please enter your email',
+            'email.email'=>'please enter your email correctly',
+            'password.required'=>'please enter your password'
         ];
     }
 }
