@@ -1,14 +1,6 @@
 @if(Session::has('success'))
-    <style>
-        .btn-outline-success {
-            color: #155724;
-            background-color: #d4edda;
-            border-color: #c3e6cb;
-            font-size: 18px;
-        }
-    </style>
-    <div class="row ">
-        <button type="text" class="btn btn-lg btn-block btn-outline-success mb-2" role="alert"
+    <div class="row mr-2 ml-2">
+        <button type="text" class="btn btn-lg btn-block btn-outline-success mb-2"
                 id="type-error">{{Session::get('success')}}
         </button>
     </div>

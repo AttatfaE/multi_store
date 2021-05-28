@@ -1,114 +1,177 @@
+
 <!DOCTYPE html>
-<html>
+<html class="loading" lang="en" data-textdirection="ltr">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description"
+          content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
+    <meta name="keywords"
+          content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
+    <meta name="author" content="PIXINVENT">
+    <title>  modern </title>
+    <link rel="apple-touch-icon" href="{{asset("assets/admin/images/ico/apple-icon-120.png")}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("assets/admin/images/ico/favicon.ico")}}">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Quicksand:300,400,500,700"
+        rel="stylesheet">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css"
+          rel="stylesheet">
 
-    <!-- Title -->
-    <title>@yield('title')</title>
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/css/plugins/animate/animate.css")}}">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/css/vendors.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/vendors/css/weather-icons/climacons.min.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/fonts/meteocons/style.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/vendors/css/charts/morris.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/vendors/css/charts/chartist.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/vendors/css/forms/selects/select2.min.css")}}">
+    <link rel="stylesheet" type="text/css"
+          href="{{asset("assets/admin/vendors/css/charts/chartist-plugin-tooltip.css")}}">
+    <link rel="stylesheet" type="text/css"
+          href="{{asset("assets/admin/vendors/css/forms/toggle/bootstrap-switch.min.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/vendors/css/forms/toggle/switchery.min.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/css/core/menu/menu-types/vertical-menu.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/css/pages/chat-application.css")}}">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN MODERN CSS-->
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/css/app.css")}}">
+{{--    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/css/custom-rtl.css")}}">--}}
+    <!-- END MODERN CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css"
+          href="{{asset("assets/admin/css/core/menu/menu-types/vertical-menu.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/css/core/colors/palette-gradient.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/fonts/simple-line-icons/style.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/css/core/colors/palette-gradient.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/css/pages/timeline.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/vendors/css/cryptocoins/cryptocoins.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/vendors/css/extensions/datedropper.min.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/vendors/css/extensions/timedropper.min.css")}}">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="{{asset("assets/admin/css/style.css")}}">
+    <!-- END Custom CSS-->
 
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta charset="UTF-8">
-    <meta name="description" content="Multi_store Admin Dashboard" />
-    <meta name="keywords" content="admin,dashboard" />
-    <meta name="author" content="" />
-
-    <!-- Styles -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-    <link href="{{asset('assets/admin/plugins/pace-master/themes/blue/pace-theme-flash.css')}}" rel="stylesheet"/>
-    <link href="{{asset('assets/admin/plugins/uniform/css/uniform.default.min.css')}}" rel="stylesheet"/>
-    <link href="{{asset('assets/admin/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/plugins/fontawesome/css/font-awesome.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/plugins/line-icons/simple-line-icons.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/plugins/offcanvasmenueffects/css/menu_cornerbox.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/plugins/waves/waves.min.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/plugins/switchery/switchery.min.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/plugins/3d-bold-navigation/css/style.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/plugins/slidepushmenus/css/component.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/plugins/weather-icons-master/css/weather-icons.min.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/plugins/metrojs/MetroJs.min.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/plugins/toastr/toastr.min.css')}}" rel="stylesheet" type="text/css"/>
-
-
-    @yield('style')
-
-
-    <!-- Theme Styles -->
-    <link href="{{asset('assets/admin/css/modern.min.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/css/themes/green.css')}}" class="theme-color" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/admin/css/custom.css')}}" rel="stylesheet" type="text/css"/>
-
-    <script src="{{asset('assets/admin/plugins/3d-bold-navigation/js/modernizr.js')}}"></script>
-    <script src="{{asset('assets/admin/plugins/offcanvasmenueffects/js/snap.svg-min.js')}}"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            direction: ltr;
+        }
+    </style>
 </head>
-<body class="page-header-fixed">
-<div class="overlay"></div>
+<body class="vertical-layout vertical-menu 2-columns  @if(Request::is('admin/users/tickets/reply*')) chat-application @endif menu-expanded fixed-navbar"
+      data-open="click" data-menu="vertical-menu" data-col="2-columns">
+<!-- fixed-top-->
 
-{{--Admin navbar--}}
-@include('admin.includes.navbar')
+<!-- Begin Header -->
+@include('admin.includes.header')
+<!--End  Header -->
+<!-- Begin SideBar-->
+@include('admin.includes.sidebar3')
 
-{{--Admin profile in sidebar--}}
-@include('admin.includes.adminBoard')
-
-{{--Admin Navigation board 'Diamond'--}}
-@include('admin.includes.navigation')
-
-{{--Admin search side--}}
-@include('admin.includes.searchPanel')
-
-{{--Admin chat menu--}}
-@include('admin.includes.navChat')
-
-{{--Admin chat --}}
-@include('admin.includes.nav2')
-
-{{--sidebar--}}
-<main class="page-content content-wrap ">
-    @include('admin.includes.sidebar2')
-
-{{--    Boadr--}}
-    @yield('board')
-
-{{--    Footer--}}
-    @include('admin.includes.footer')
-
-</main><!-- Page Content -->
-
-<div class="cd-overlay"></div>
+@yield('board')
+<!--End Sidebar-->
+@include('admin.includes.footer2')
 
 
-<!-- Javascripts -->
-<script src="{{asset('assets/admin/plugins/jquery/jquery-2.1.4.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/pace-master/pace.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/jquery-blockui/jquery.blockui.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/switchery/switchery.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/uniform/jquery.uniform.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/offcanvasmenueffects/js/classie.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/offcanvasmenueffects/js/main.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/waves/waves.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/3d-bold-navigation/js/main.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/waypoints/jquery.waypoints.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/jquery-counterup/jquery.counterup.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/toastr/toastr.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/flot/jquery.flot.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/flot/jquery.flot.time.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/flot/jquery.flot.symbol.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/flot/jquery.flot.resize.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/flot/jquery.flot.tooltip.min.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/curvedlines/curvedLines.js')}}"></script>
-<script src="{{asset('assets/admin/plugins/metrojs/MetroJs.min.js')}}"></script>
-<script src="{{asset('assets/admin/js/modern.js')}}"></script>
-<script src="{{asset('assets/admin/js/pages/dashboard.js')}}"></script>
+<!-- BEGIN VENDOR JS-->
+<script src="{{asset("assets/admin/vendors/js/vendors.min.js")}}" type="text/javascript"></script>
+<!-- BEGIN VENDOR JS-->
+<script src="{{asset("assets/admin/vendors/js/tables/datatable/datatables.min.js")}}"
+        type="text/javascript"></script>
+<script src="{{asset("assets/admin/vendors/js/tables/datatable/dataTables.buttons.min.js")}}"
+        type="text/javascript"></script>
 
+<script src="{{asset("assets/admin/vendors/js/forms/toggle/bootstrap-switch.min.js")}}"
+        type="text/javascript"></script>
+<script src="{{asset("assets/admin/vendors/js/forms/toggle/bootstrap-checkbox.min.js")}}"
+        type="text/javascript"></script>
+<script src="{{asset("assets/admin/vendors/js/forms/toggle/switchery.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("assets/admin/js/scripts/forms/switch.js")}}" type="text/javascript"></script>
+<script src="{{asset("assets/admin/vendors/js/forms/select/select2.full.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("assets/admin/js/scripts/forms/select/form-select2.js")}}" type="text/javascript"></script>
+
+<!-- BEGIN PAGE VENDOR JS-->
+<script src="{{asset("assets/admin/vendors/js/charts/chart.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("assets/admin/vendors/js/charts/echarts/echarts.js")}}" type="text/javascript"></script>
+
+<script src="{{asset("assets/admin/vendors/js/extensions/datedropper.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("assets/admin/vendors/js/extensions/timedropper.min.js")}}" type="text/javascript"></script>
+
+<script src="{{asset("assets/admin/vendors/js/forms/icheck/icheck.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("assets/admin/js/scripts/pages/chat-application.js")}}" type="text/javascript"></script>
+<!-- END PAGE VENDOR JS-->
+<!-- BEGIN MODERN JS-->
+<script src="{{asset("assets/admin/js/core/app-menu.js")}}" type="text/javascript"></script>
+<script src="{{asset("assets/admin/js/core/app.js")}}" type="text/javascript"></script>
+<script src="{{asset("assets/admin/js/scripts/customizer.js")}}" type="text/javascript"></script>
+<!-- END MODERN JS-->
+<!-- BEGIN PAGE LEVEL JS-->
+<script src="{{asset("assets/admin/js/scripts/pages/dashboard-crypto.js")}}" type="text/javascript"></script>
+
+
+<script src="{{asset("assets/admin/js/scripts/tables/datatables/datatable-basic.js")}}"
+        type="text/javascript"></script>
+<script src="{{asset("assets/admin/js/scripts/extensions/date-time-dropper.js")}}" type="text/javascript"></script>
+<!-- END PAGE LEVEL JS-->
+
+<script src="{{asset("assets/admin/js/scripts/forms/checkbox-radio.js")}}" type="text/javascript"></script>
+
+<script src="{{asset("assets/admin/js/scripts/modal/components-modal.js")}}" type="text/javascript"></script>
+
+<script>
+    $('#meridians1').timeDropper({
+        meridians: true,
+        setCurrentTime: false
+    });
+    $('#meridians2').timeDropper({
+        meridians: true,setCurrentTime: false
+
+    });
+    $('#meridians3').timeDropper({
+        meridians: true,
+        setCurrentTime: false
+    });
+    $('#meridians4').timeDropper({
+        meridians: true,
+        setCurrentTime: false
+    });
+    $('#meridians5').timeDropper({
+        meridians: true,setCurrentTime: false
+
+    });
+    $('#meridians6').timeDropper({
+        meridians: true,setCurrentTime: false
+    });
+    $('#meridians7').timeDropper({
+        meridians: true,setCurrentTime: false
+    });
+    $('#meridians8').timeDropper({
+        meridians: true,setCurrentTime: false
+    });
+    $('#meridians9').timeDropper({
+        meridians: true,setCurrentTime: false
+    });
+    $('#meridians10').timeDropper({
+        meridians: true,setCurrentTime: false
+    });
+    $('#meridians11').timeDropper({
+        meridians: true,setCurrentTime: false
+    });
+    $('#meridians12').timeDropper({
+        meridians: true,setCurrentTime: false
+    });
+    $('#meridians13').timeDropper({
+        meridians: true,setCurrentTime: false
+    });
+    $('#meridians14').timeDropper({
+        meridians: true,setCurrentTime: false
+    });
+</script>
+@yield('script')
 </body>
 </html>
+
