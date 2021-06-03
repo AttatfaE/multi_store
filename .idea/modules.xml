@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../eCommerce/.idea/eCommerce.iml" filepath="$PROJECT_DIR$/../eCommerce/.idea/eCommerce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lumen-swoole-ws-service-main/.idea/inertiaservice.iml" filepath="$PROJECT_DIR$/../lumen-swoole-ws-service-main/.idea/inertiaservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/multi_store.iml" filepath="$PROJECT_DIR$/.idea/multi_store.iml" />
     </modules>
   </component>
