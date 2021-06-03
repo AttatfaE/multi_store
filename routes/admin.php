@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\Dashboard\SettingController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,13 +23,21 @@ Route::group(
         'prefix' => LaravelLocalization::setLocale(),
         'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
     ], function(){
-    Route::get('/',[\App\Http\Controllers\Controller::class,'index']);
+    //Route::get('/',[\App\Http\Controllers\Controller::class,'index']);
     Route::group(['prefix'=>'admin','namespace'=>'admin', 'middleware'=>'auth:admin'], function (){
         Route::get('/',[HomeController::class,'index'])->name('admin.dashboard');
         Route::get('logout',[LoginController::class, 'logout'])->name('admin.logout');
-        Route::group(['prefix'=>'admin/setting'],function (){
+
+        #################  Setting  #########################3
+        Route::group(['prefix'=>'setting'],function (){
             Route::get('getShipping/{type}',[SettingController::class,'editShipping'])->name('admin.setting.shipping.edit');
             Route::put('getShipping/{id}',[SettingController::class,'storeShipping'])->name('admin.setting.shipping.store');
+        });
+
+        #################  Profile  #########################3
+        Route::group(['prefix'=>'profile'],function (){
+            Route::get('edit-profile',[ProfileController::class,'editProfile'])->name('admin.profile.edit');
+            Route::put('update-profile',[ProfileController::class,'updateProfile'])->name('admin.profile.update');
         });
 
     });

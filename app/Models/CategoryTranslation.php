@@ -4,12 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SettingTranslation extends Model
+class CategoryTranslation extends Model
 {
-    protected $guarded =[];
-
+    protected $fillable = ['name'];
     public $timestamps = false;
-
-
-
 }

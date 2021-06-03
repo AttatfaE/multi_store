@@ -37,8 +37,10 @@ class SettingController extends Controller
 
     public function storeShipping(ShippingRequest $request, $id)
     {
-        try {
-            $shipping = Setting::find($id);
+
+//        try {
+            $shipping = Setting::findOrNew($id);
+            //return $shipping->translations;
             DB::beginTransaction();
             $shipping->update([
 
@@ -49,11 +51,11 @@ class SettingController extends Controller
             DB::commit();
             return redirect()->back()->with('success','Shipping settings are successfully updated');
 
-        }
+      /*  }
         catch (\Exception $ex){
             DB::rollBack();
             return redirect()->back()->with('error','there is an error, please try later');
-        }
+        }*/
 
 
 

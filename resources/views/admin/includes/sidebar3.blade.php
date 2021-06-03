@@ -21,9 +21,9 @@
                     </li>
                 </ul>
             </li>
-
-            <li class=" nav-item"><a href="#"><i class="la la-cogs"></i><span class="menu-title font-weight-bold"
-                                                                              data-i18n="nav.other_pages.main">{{__('admin/sidebar.Settings')}}</span></a>
+            <li class=" nav-item"><a href="#"><i class="la la-cogs"></i>
+                    <span class="menu-title font-weight-bold"
+                          data-i18n="nav.dash.main">{{__('admin/sidebar.Settings')}}</span></a>
                 <ul class="menu-content">
                     <li><a class="menu-item" href="#" data-i18n="nav.other_pages.coming_soon.main">{{__('admin/sidebar.Shipping')}}</a>
                         <ul class="menu-content">
@@ -50,6 +50,7 @@
 
                 </ul>
             </li>
+
             <li class="nav-item"><a href=""><i class="la la-home"></i>
                     <span class="menu-title font-weight-bold" data-i18n="nav.dash.main">Categories </span>
                     <span

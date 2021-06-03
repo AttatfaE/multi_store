@@ -8,5 +8,11 @@ return [
     'Quebec shipping'=>"Quebec shipping",
     'Canada shipping'=>"Canada shipping",
     'International shipping'=>"International shipping",
+    'Edit'=>'Edit',
+    'data'=>'data',
+    'Shipping Name'=>'Shipping Name',
+    'Value'=>'Value',
+    'Cancel'=>'Cancel',
+    'Save'=>'Save',
 
 ];

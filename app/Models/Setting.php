@@ -14,9 +14,9 @@ class Setting extends Model
      *
      * @var array
      */
-    protected $with = array(
+    protected $with = [
         'translations'
-    );
+    ];
 
     protected $translatedAttributes = ['value'];
     /**
@@ -24,7 +24,7 @@ class Setting extends Model
      *
      * @var string
      */
-   protected $table = "settings";
+
    protected $fillable =['key','is_translatable', 'plain_value'];
 
    protected $casts = [
