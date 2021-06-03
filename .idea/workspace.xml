@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48c563d5-cb60-4aca-ac2d-8925857559ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,26 +137,29 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1t3WPPLSlsGCxszbhr1l0Z1VHZo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lumen-swoole-ws-service-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/fr/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/lang/fr/admin" />
+      <recent name="$PROJECT_DIR$/resources/lang/en/admin" />
+      <recent name="$PROJECT_DIR$/resources/views/admin/profile" />
       <recent name="$PROJECT_DIR$/resources/views/admin/setting" />
       <recent name="$PROJECT_DIR$/public/assets" />
-      <recent name="$PROJECT_DIR$/resources/views/admin/includes" />
-      <recent name="$PROJECT_DIR$/../eCommerce/resources/views/admin/includes" />
-      <recent name="$PROJECT_DIR$/public/assets/admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -177,6 +181,9 @@
       <updated>1621998228803</updated>
       <workItem from="1621998232612" duration="5345000" />
       <workItem from="1622006193558" duration="15266000" />
+      <workItem from="1622269644347" duration="5685000" />
+      <workItem from="1622438799606" duration="19900000" />
+      <workItem from="1622585111347" duration="13758000" />
     </task>
     <servers />
   </component>
@@ -194,5 +201,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
