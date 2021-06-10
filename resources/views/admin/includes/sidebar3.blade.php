@@ -6,21 +6,7 @@
                         class="menu-title" data-i18n="nav.add_on_drag_drop.main">Main</span></a>
             </li>
 
-            <li class="nav-item">
-                <a href=""><i class="la la-language"></i>
-                    <span class="menu-title font-weight-bold" data-i18n="nav.dash.main">Languages </span>
-                    <span
-                        class="badge badge badge-info badge-pill float-right mr-2">{{--{{App\Models\Language::count()}}--}}</span>
-                </a>
-                <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href="{{--{{route('all.languages')}}--}}"
-                                          data-i18n="nav.dash.ecommerce"> All </a>
-                    </li>
-                    <li><a class="menu-item" href="{{--{{route('admin.create.language')}}--}}" data-i18n="nav.dash.crypto">Add New Language
-                        </a>
-                    </li>
-                </ul>
-            </li>
+
             <li class=" nav-item"><a href="#"><i class="la la-cogs"></i>
                     <span class="menu-title font-weight-bold"
                           data-i18n="nav.dash.main">{{__('admin/sidebar.Settings')}}</span></a>
@@ -52,15 +38,28 @@
             </li>
 
             <li class="nav-item"><a href=""><i class="la la-home"></i>
-                    <span class="menu-title font-weight-bold" data-i18n="nav.dash.main">Categories </span>
+                    <span class="menu-title font-weight-bold" data-i18n="nav.dash.main"> {{__('admin/sidebar.Categories')}} </span>
                     <span
-                        class="badge badge badge-danger badge-pill float-right mr-2">{{--{{App\Models\Main_category::categoryDefault()->count()}}--}}</span>
+                        class="badge badge badge-danger badge-pill float-right mr-2">{{\App\Models\Category::whereNull('parentId')->count()}}</span>
                 </a>
                 <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href="{{--{{route('all.categories')}}--}}"
-                                          data-i18n="nav.dash.ecommerce"> All </a>
+                    <li class="active"><a class="menu-item" href="{{route('all.categories', 'categories')}}"
+                                          data-i18n="nav.dash.ecommerce"> {{__('admin/sidebar.All')}} </a>
                     </li>
-                    <li><a class="menu-item" href="{{--{{route('admin.create.category')}}--}}" data-i18n="nav.dash.crypto">Add New Category </a>
+                    <li><a class="menu-item" href="{{route('admin.create.category','category')}}" data-i18n="nav.dash.crypto">{{__('admin/sidebar.Add New Category')}} </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href=""><i class="la la-home"></i>
+                    <span class="menu-title font-weight-bold" data-i18n="nav.dash.main"> {{__('admin/sidebar.Subcategories')}} </span>
+                    <span
+                        class="badge badge badge-danger badge-pill float-right mr-2">{{\App\Models\Category::whereNotNull('parentId')->count()}}</span>
+                </a>
+                <ul class="menu-content">
+                    <li class="active"><a class="menu-item" href="{{route('all.categories','subcategories')}}"
+                                          data-i18n="nav.dash.ecommerce"> {{__('admin/sidebar.All')}} </a>
+                    </li>
+                    <li><a class="menu-item" href="{{route('admin.create.category','subcategory')}}" data-i18n="nav.dash.crypto">{{__('admin/sidebar.Add New Subcategory')}} </a>
                     </li>
                 </ul>
             </li>
@@ -82,35 +81,10 @@
             </li>
 
 
-            <li class="nav-item"><a href=""><i class="la la-male"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">الطلاب  </span>
-                    <span
-                        class="badge badge badge-warning  badge-pill float-right mr-2"></span>
-                </a>
-                <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href=""
-                                          data-i18n="nav.dash.ecommerce"> عرض الكل </a>
-                    </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
-                            طالب </a>
-                    </li>
-                </ul>
-            </li>
 
 
-            <li class="nav-item">
-                <a href=""><i class="la la-male"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">تذاكر المراسلات   </span>
-                    <span
-                        class="badge badge badge-danger  badge-pill float-right mr-2">0</span>
-                </a>
-                <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href=""
-                                          data-i18n="nav.dash.ecommerce"> تذاكر الطلاب </a>
-                    </li>
-                </ul>
-            </li>
 
+           
 
             <li class=" nav-item"><a href="#"><i class="la la-television"></i><span class="menu-title"
                                                                                     data-i18n="nav.templates.main">Templates</span></a>

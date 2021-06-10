@@ -15,4 +15,9 @@ return [
     'Value'=>'Valeur',
     'Cancel'=>'Retour',
     'Save'=>'Sauvegarder',
+    'Categories'=>'Catégories',
+    'Subcategories'=>'Sous-catégories',
+    'All'=>'Toutes',
+    'Add New Category'=>'Ajouter Nouvelle Catégorie',
+    'Add New Subcategory'=>'Ajouter Nouvelle Sous-catégorie'
 ];

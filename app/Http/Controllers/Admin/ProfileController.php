@@ -20,7 +20,7 @@ class ProfileController extends Controller
 
     public function updateProfile(profileRequest $request)
     {
-        //try {
+        try {
         $admin = Admin::find(auth('admin')->user()->id);
 
             unset($request['id']);
@@ -46,11 +46,11 @@ class ProfileController extends Controller
             DB::commit();
             return redirect()->back()->with('success',__('admin/profile.Admin profile is successfully updated'));
 
-      /*  }
+       }
         catch (\Exception $ex){
             DB::rollBack();
             return redirect()->back()->with('error',__('admin/profile.There is an error there, please try later'));
-        }*/
+        }
     }
 
 }

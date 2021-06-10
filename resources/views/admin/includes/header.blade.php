@@ -232,25 +232,22 @@
                                                                 href="javascript:void(0)">Read all messages</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown dropdown-user nav-item">
-                        <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-                            <span class="mr-1 nav-link" style="background-color:#f13e4b;font-weight: bold">{{ LaravelLocalization::getCurrentLocale() }}
-                            </span>
+                    <li class="nav-item">
+                       @if(LaravelLocalization::getCurrentLocale()=='fr')
+
+                        <a class="btn btn-link  btn-glow mr-1 mb-1 nav-link-label " style=" color: #ffffff; font-weight: bold;font-size: 16px;text-decoration:underline" rel="alternate"
+                               href="{{ LaravelLocalization::getLocalizedURL('en') }}">
+                                English
                         </a>
+                        @else
+                        <a class="btn btn-link  nav-link-label " style=" color: #ffffff; font-weight: bold;font-size: 16px;text-decoration: underline" rel="alternate"
+                           href="{{ LaravelLocalization::getLocalizedURL('fr') }}">
+                            français
+                        </a>
+                        @endif
 
-                        <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-                            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-
-                                <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}"
-                                   href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                                    {{ $properties['native'] }}
-                                </a>
-                                @if($localeCode != count(LaravelLocalization::getSupportedLocales()) )
-                                    <div class="dropdown-divider"></div>
-                                @endif
-                            @endforeach
-                        </div>
                     </li>
+
                 </ul>
             </div>
         </div>
