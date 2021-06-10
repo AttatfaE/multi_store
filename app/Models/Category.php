@@ -9,6 +9,7 @@ class Category extends Model
 {
     use translatable;
 
+
     protected $with=['translations'];
 
     protected $translatedAttributes = ['name'];
@@ -17,8 +18,22 @@ class Category extends Model
 
     //protected $hidden = ['translations'];
 
+    /*public function scopeActive($query){
+        return $query->where('is_active',1);
+    }*/
+
+    public function active()
+    {
+        return $this->is_active == 1?__('admin/category.active'):__('admin/category.not active');
+    }
+
     protected $casts = [
         'is_active'=>'boolean',
         'is_searchable'=>'boolean'
     ];
+
+    public function categories()
+    {
+        return $this->hasMany(self::class,'parentId');
+    }
 }

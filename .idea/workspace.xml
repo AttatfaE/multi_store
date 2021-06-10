@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48c563d5-cb60-4aca-ac2d-8925857559ef" name="Default Changelist" comment="">
+
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -157,9 +158,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/lang/fr/admin" />
       <recent name="$PROJECT_DIR$/resources/lang/en/admin" />
-      <recent name="$PROJECT_DIR$/resources/views/admin/profile" />
-      <recent name="$PROJECT_DIR$/resources/views/admin/setting" />
-      <recent name="$PROJECT_DIR$/public/assets" />
+      <recent name="$PROJECT_DIR$/database/seeds" />
+      <recent name="$PROJECT_DIR$/resources/views/admin/categories" />
+      <recent name="$PROJECT_DIR$/app/Http/Requests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -184,6 +185,7 @@
       <workItem from="1622269644347" duration="5685000" />
       <workItem from="1622438799606" duration="19900000" />
       <workItem from="1622585111347" duration="13758000" />
+      <workItem from="1623218756707" duration="10126000" />
     </task>
     <servers />
   </component>

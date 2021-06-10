@@ -14,5 +14,10 @@ return [
     'Value'=>'Value',
     'Cancel'=>'Cancel',
     'Save'=>'Save',
+    'Categories'=>'Categories',
+    'Subcategories'=>'Subcategories',
+    'All'=>'All',
+    'Add New Category'=>'Add New Category',
+    'Add New Subcategory'=>'Add New SubCategory',
 
 ];
