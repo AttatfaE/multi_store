@@ -66,26 +66,33 @@
 
 
             <li class="nav-item"><a href=""><i class="la la-male"></i>
-                    <span class="menu-title font-weight-bold" data-i18n="nav.dash.main">Vendors  </span>
+                    <span class="menu-title font-weight-bold" data-i18n="nav.dash.main">{{__('admin/sidebar.Brands')}} </span>
                     <span
-                        class="badge badge badge-success badge-pill float-right mr-2">{{--{{App\Models\Vendor::count()}}--}}</span>
+                        class="badge badge badge-success badge-pill float-right mr-2">{{\App\Models\Brand::count()}}</span>
                 </a>
                 <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href="{{--{{route('all.vendors')}}--}}"
-                                          data-i18n="nav.dash.ecommerce"> All </a>
+                    <li class="active"><a class="menu-item" href="{{route('all.brands')}}"
+                                          data-i18n="nav.dash.ecommerce"> {{__('admin/sidebar.All')}} </a>
                     </li>
-                    <li><a class="menu-item" href="{{--{{route("admin.create.vendor")}}--}}" data-i18n="nav.dash.crypto">
-                            Add new vendor </a>
+                    <li><a class="menu-item" href="{{route("admin.create.brand")}}" data-i18n="nav.dash.crypto">
+                             {{__('admin/sidebar.Add new Brand')}}</a>
                     </li>
                 </ul>
             </li>
-
-
-
-
-
-           
-
+            <li class="nav-item"><a href=""><i class="la la-male"></i>
+                    <span class="menu-title font-weight-bold" data-i18n="nav.dash.main">{{__('admin/sidebar.tags')}} </span>
+                    <span
+                        class="badge badge badge-success badge-pill float-right mr-2">{{\App\Models\Tag::count()}}</span>
+                </a>
+                <ul class="menu-content">
+                    <li class="active"><a class="menu-item" href="{{route('all.tags')}}"
+                                          data-i18n="nav.dash.ecommerce"> {{__('admin/sidebar.All')}} </a>
+                    </li>
+                    <li><a class="menu-item" href="{{route("admin.create.tag")}}" data-i18n="nav.dash.crypto">
+                             {{__('admin/sidebar.Add new Tag')}}</a>
+                    </li>
+                </ul>
+            </li>
             <li class=" nav-item"><a href="#"><i class="la la-television"></i><span class="menu-title"
                                                                                     data-i18n="nav.templates.main">Templates</span></a>
                 <ul class="menu-content">

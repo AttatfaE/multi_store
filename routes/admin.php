@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\Dashboard\SettingController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\MainCategoriesController;
 use App\Http\Controllers\Admin\ProfileController;
+use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -55,6 +57,30 @@ Route::group(
         });
 
         ##########  End Categories Routes  ################
+
+            ############# Begin Brands routes  ################
+            Route::group(['prefix'=>'brands'],function (){
+                Route::get('/',[BrandController::class, 'getBrands'])->name('all.brands');
+                Route::get('/create',[BrandController::class, 'addBrand'])->name('admin.create.brand');
+                Route::post('/store',[BrandController::class, 'store'])->name('admin.store.brand');
+                Route::get('/edit/{brand_id}',[BrandController::class, 'edit'])->name('admin.edit.brand');
+                Route::post('/update/{brand_id}',[BrandController::class, 'update'])->name('admin.update.brand');
+                Route::get('/delete/{brand_id}',[BrandController::class, 'delete'])->name('admin.delete.brand');
+                Route::get('/changeStatus/{brand_id}',[BrandController::class, 'changeStatus'])->name('admin.changeStatus.brand');
+            });
+
+            ##########  End Tags Routes  ################  ############# Begin Brands routes  ################
+            Route::group(['prefix'=>'tags'],function (){
+                Route::get('/',[TagController::class, 'getTags'])->name('all.tags');
+                Route::get('/create',[TagController::class, 'addTag'])->name('admin.create.tag');
+                Route::post('/store',[TagController::class, 'store'])->name('admin.store.tag');
+                Route::get('/edit/{tag_id}',[TagController::class, 'edit'])->name('admin.edit.tag');
+                Route::post('/update/{tag_id}',[TagController::class, 'update'])->name('admin.update.tag');
+                Route::get('/delete/{tag_id}',[TagController::class, 'delete'])->name('admin.delete.tag');
+                Route::get('/changeStatus/{tag_id}',[TagController::class, 'changeStatus'])->name('admin.changeStatus.tag');
+            });
+
+            ##########  End Tags Routes  ################
 
 
     });

@@ -2,38 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48c563d5-cb60-4aca-ac2d-8925857559ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Helpers/General.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CategoryRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Observers/CategoryObserver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/SubCategorySeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/subCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr/admin/category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr/admin/subCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/custom.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/default.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/semantic-ui.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-bootstrap-4.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-default.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-tailwind.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/tailwind.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BrandController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TagController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BrandRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/TagRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Brand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/BrandTranslation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/TagTranslation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_11_053632_create_table_brands.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_11_053705_create_table_brand_translations.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_12_174533_create_table_tags.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_12_174603_create_table_tag_translations.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/brand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fr/admin/brand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fr/admin/tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/brands/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/brands/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/brands/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/tags/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/tags/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/tags/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/SettingTranslation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/SettingTranslation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/General.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/General.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/admin/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/admin/category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/admin/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/admin/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fr/admin/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fr/admin/category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/fr/admin/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fr/admin/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/alerts/success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/alerts/success.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/sidebar3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/sidebar3.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,17 +179,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/fr/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Requests" />
       <recent name="$PROJECT_DIR$/resources/lang/fr/admin" />
       <recent name="$PROJECT_DIR$/resources/lang/en/admin" />
+      <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/database/seeds" />
-      <recent name="$PROJECT_DIR$/resources/views/admin/categories" />
-      <recent name="$PROJECT_DIR$/app/Http/Requests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -214,7 +214,8 @@
       <workItem from="1622269644347" duration="5685000" />
       <workItem from="1622438799606" duration="19900000" />
       <workItem from="1622585111347" duration="13758000" />
-      <workItem from="1623218756707" duration="10126000" />
+      <workItem from="1623218756707" duration="22951000" />
+      <workItem from="1623473101145" duration="25561000" />
     </task>
     <servers />
   </component>
