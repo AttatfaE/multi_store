@@ -18,6 +18,12 @@ return [
     'Subcategories'=>'Subcategories',
     'All'=>'All',
     'Add New Category'=>'Add New Category',
+    'Add new Tag'=>'Add New Tag',
     'Add New Subcategory'=>'Add New SubCategory',
+    'Brands'=>'Brands',
+    'tags'=>'Tags',
+    'Add new Brand'=>'Add new Brand',
+
+
 
 ];

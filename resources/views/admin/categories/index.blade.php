@@ -18,10 +18,11 @@
                     <div class="content-header-left col-md-6 col-12 mb-2">
                         <h3 class="content-header-title">
                             @if($type=='categories')
-                            {{__('admin/category.Categories')}}</h3>
-                        @else
+                            {{__('admin/category.Categories')}}
+                             @else
                             {{__('admin/subCategory.Subcategories')}}
-                        @endif
+                            @endif
+                        </h3>
                         <div class="row breadcrumbs-top">
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
@@ -44,6 +45,14 @@
                 <div class="content-body">
                     @include('admin.includes.alerts.success')
                     @include('admin.includes.alerts.errors')
+                    @if(\App\Models\Category::count()==0)
+                        <div class="row mt-5">
+                            <div class="alert alert-success col-md-6 offset-3" role="alert">
+                                <h3 class="white text-center">{{__('There is no categories in this page')}}</h3>
+                            </div>
+
+                        </div>
+                    @else
                     <div class="card">
                         <div class="card-body card-dashboard">
                             <div class="heading-elements" style="float: left">
@@ -114,7 +123,7 @@
                         </div>
 
                     </div>
-
+                    @endif
                 </div>
 
             </div>

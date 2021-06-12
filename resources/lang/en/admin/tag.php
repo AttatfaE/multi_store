@@ -12,7 +12,7 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-
+    'Tags'=>'Tags',
     'Name'=>'Name',
     'Photo'=>'Photo',
     'slug'=>'Slug',
@@ -20,23 +20,24 @@ return [
     'Edit'=>'Edit',
     'Delete'=>'Delete',
     'activate'=>'Activate',
-    'deactivate '=>'Deactivate',
+    'Desactivate'=>'Deactivate',
     'active'=>'active',
     'not active'=>'not active',
     'dashboard'=>'Dashboard',
     'Categories'=>'Categories',
-    'Add Category'=>'Add Category',
-    'Edit Category'=>'Edit Category',
+    'Add Tag'=>'Add Tag',
+    'Edit Tag'=>'Edit Tag',
     'Add New Category'=>'Add New Category',
-    'New Category is successfully created'=>'New Category is successfully created',
-    'Category is successfully updated'=>'Category is successfully updated',
-    'Category is successfully deleted'=>'Category is successfully deleted',
+    'New tag is successfully added'=>'New tag is successfully added',
+    'Tag is successfully updated'=>'Tag is successfully updated',
+    'Brand not exist'=>'Brand not exist',
+    'Tag is successfully deleted'=>'Tag is successfully deleted',
     'This category does not exist '=>'This category does not exist ',
     'There is an error somewhere, please try later'=>'There is an error somewhere, please try later',
-    'Categories List'=>'Categories List',
+    'Tags List'=>'Tags List',
     'Category Image'=>'Category Image',
     'Select File'=>'Select File',
-    'Category data'=>'Category data',
+    'Tag Data'=>'Tag Data',
     'Category Name'=>'Category Name',
     'Save'=>'Save',
     'Cancel'=>'Cancel',
@@ -44,7 +45,17 @@ return [
     'slug required'=>'slug field is required *',
     'this category slug is already exists'=>'this category slug is already exists',
     'Update'=>'Update',
-    'There is no categories in this page'=>'There is no categories in this page',
+    'Brands'=>'Brands',
+    'Add Brand'=>'Add Brand',
+    'Brands List'=>'Brands List',
+    'Brand Data'=>'Brand Data',
+    'Brand Image'=>'Brand Image',
+    'Photo required *'=>'Photo required *',
+    'Bad extension file, must be png,jpeg, gif or jpg *'=>'Bad extension file, must be png,jpeg, gif or jpg *',
+    'There is no tags in this page'=>'There is no tags in this page',
+    'Tag not exist'=>'Tag not exist',
+
+
 
 
 

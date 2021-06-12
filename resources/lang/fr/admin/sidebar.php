@@ -19,5 +19,11 @@ return [
     'Subcategories'=>'Sous-catégories',
     'All'=>'Toutes',
     'Add New Category'=>'Ajouter Nouvelle Catégorie',
-    'Add New Subcategory'=>'Ajouter Nouvelle Sous-catégorie'
+    'Add New Subcategory'=>'Ajouter Nouvelle Sous-catégorie',
+    'Brands'=>'Marques',
+    'tags'=>'Étiquettes',
+    'Add new Brand'=>'Ajouter Nouvelle Marque',
+    'Add new Tag'=>'Ajouter Nouvelle Étiquette',
+
+
 ];
