@@ -32,7 +32,7 @@ Route::group(
         Route::get('/',[HomeController::class,'index'])->name('admin.dashboard');
         Route::get('logout',[LoginController::class, 'logout'])->name('admin.logout');
 
-        #################  Setting  #########################3
+
         Route::group(['prefix'=>'setting'],function (){
             Route::get('getShipping/{type}',[SettingController::class,'editShipping'])->name('admin.setting.shipping.edit');
             Route::put('getShipping/{id}',[SettingController::class,'storeShipping'])->name('admin.setting.shipping.store');
