@@ -11,8 +11,10 @@ use Illuminate\Support\Facades\DB;
 
 class MainCategoriesController extends Controller
 {
+
     public function getCategories($type)
     {
+
         if ($type=='categories'){
             $categories = Category::whereNull('parentId')->orderBy('id', 'DESC') ->paginate(PAGINATION_COUNT);
             return view('admin.categories.index', compact('type','categories'));
@@ -35,7 +37,8 @@ class MainCategoriesController extends Controller
 
     public function addCategories($type)
     {
-            $categories = Category::whereNull('parentId')->orderBy('id', 'DESC') ->paginate(PAGINATION_COUNT);
+            $categories = Category::get();
+
             return view('admin.categories.create',compact('categories','type'));
             /* else if ($type=='subcategory'){
             $categories = Category::whereNotNull('parentId')->orderBy('id', 'DESC') ->paginate(PAGINATION_COUNT);

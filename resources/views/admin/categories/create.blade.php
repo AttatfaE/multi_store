@@ -77,30 +77,62 @@
                                                     @if($type=='category'){{__('admin/category.Category data')}}
                                                     @else {{__('admin/subCategory.Subcategory data')}}@endif
                                                 </h4>
-                                                @if($type!='category')
+                                               @if($type!='category')
                                                         <div class="row">
-                                                            <div class="col-md-5">
-                                                                <div class="form-group">
-                                                                    <select class="select2 select2-border form-control {{ $errors->has('parentId') ? ' is-invalid' : '' }}" required name="parentId" id="id_h5_single" data-border-color="purple">
 
-                                                                            <option value="">SELECT CATEGORY</option>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <select class="select2 form-control {{ $errors->has('parentId') ? ' is-invalid' : '' }}" required
+                                                                            name="parentId" id="main_category" data-border-color="purple"
+                                                                            onchange="getval();">
+
+
+
+                                                                            <option value="0" selected disabled>SELECT CATEGORY</option>
+                                                                        @foreach($categories as $category)
                                                                             <optgroup >
-                                                                                @foreach($categories as $category)
-                                                                                    <option value="{{$category->id}}">{{$category->name}}</option>
-                                                                                @endforeach
+                                                                                @if($category->parentId == null)
+                                                                                    <option class="bold" value="{{$category->id}}">{{$category->name }}</option>
+                                                                                        @foreach($categories as $subcategory)
+                                                                                            @if($subcategory->parentId==$category->id)
+                                                                                                <option value="{{$subcategory->id}}">{{$category->name }} >> {{$subcategory->name }}</option>
+
+                                                                                            @foreach($categories as $subcategoryChild)
+                                                                                                    @if($subcategoryChild->parentId==$subcategory->id)
+                                                                                                    <option value="{{$subcategoryChild->id}}">{{$category->name }} >> {{$subcategory->name }} >> {{$subcategoryChild->name}}</option>
+                                                                                                    @endif
+                                                                                                        @endforeach
+                                                                                                @endif
+                                                                                            @endforeach
+                                                                                @endif
                                                                              </optgroup>
+
+                                                                        @endforeach
+                                                                    </select>
+
+                                                                    @error('parentId')
+                                                                    <span class="text-danger"> {{$message}}</span>
+                                                                    @enderror
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group sub_category_select hidden">
+                                                                    <select class="  form-control {{ $errors->has('parentId') ? ' is-invalid' : '' }}" required
+                                                                            name="parentId" id="sub_category" data-border-color="purple">
 
                                                                     </select>
                                                                     @error('parentId')
                                                                     <span class="text-danger"> {{$message}}</span>
                                                                     @enderror
                                                                 </div>
-
                                                             </div>
 
 
                                                         </div>
-                                                @endif
+                                               @endif
                                                         <div class="row ">
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
@@ -147,10 +179,11 @@
 
                                             <div class="form-actions">
                                                 <button type="button" class="btn btn-warning mr-1"
-                                                        onclick="history.back();">
+                                                        onclick="history.back();"
+                                                        id="a"  >
                                                     <i class="ft-x"></i>{{__('admin/category.Cancel')}}
                                                 </button>
-                                                <button type="submit" class="btn btn-primary">
+                                                <button  type="submit" class="btn btn-primary">
                                                     <i class="la la-check-square-o"></i> {{__('admin/category.Save')}}
                                                 </button>
                                             </div>
@@ -166,3 +199,27 @@
         </div>
     </div>
 @stop
+@push('scripts')
+    <script>
+
+        $(document).ready(function(){
+
+            $("#main_category").on('change',function(){
+                let id = $(this).val();
+                console.log(id);
+                $('.sub_category_select').removeClass('hidden');
+               $('#sub_category').empty();
+                $('#sub_category').append('<option value="0" selected disabled>    Processing.....</option>');
+
+
+                /*  $.ajax({
+                    type:'GET',
+                    url: ,
+
+                })*/
+            });
+        });
+
+
+    </script>
+@endpush

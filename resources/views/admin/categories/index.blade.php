@@ -68,7 +68,7 @@
 
 
                             <table class="table table-bordered table-striped">
-                                <thead>
+                                <thead class="bg-info white">
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">{{__('admin/category.Name')}}</th>
