@@ -1,5 +1,5 @@
 <?php
-    const PAGINATION_COUNT = 5;
+    const PAGINATION_COUNT = 10;
 
     function upload_image($folder, $image){
         $image->store('/',$folder);
