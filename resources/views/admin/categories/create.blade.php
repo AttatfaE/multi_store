@@ -118,17 +118,6 @@
 
 
                                                             </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group sub_category_select hidden">
-                                                                    <select class="  form-control {{ $errors->has('parentId') ? ' is-invalid' : '' }}" required
-                                                                            name="parentId" id="sub_category" data-border-color="purple">
-
-                                                                    </select>
-                                                                    @error('parentId')
-                                                                    <span class="text-danger"> {{$message}}</span>
-                                                                    @enderror
-                                                                </div>
-                                                            </div>
 
 
                                                         </div>
@@ -209,7 +198,7 @@
                 console.log(id);
                 $('.sub_category_select').removeClass('hidden');
                $('#sub_category').empty();
-                $('#sub_category').append('<option value="0" selected disabled>    Processing.....</option>');
+               // $('#sub_category').append('<option value="0" selected disabled>    Processing.....</option>');
 
 
                 /*  $.ajax({
